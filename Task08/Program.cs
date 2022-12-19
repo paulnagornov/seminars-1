@@ -5,30 +5,19 @@
 // 8 -> 2, 4, 6, 8
 
 
-int i = 1;
-bool not = true;
-Console.WriteLine("Введите натуральное число: ");
-number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Четные числа от 1 до " + number);
-while (i <= number)
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+
+Console.Write($"Четные числа от 1 до {num} : ");
+
+while (count <= num)
 {
-    if (i % 2 != 1)
+    if (count % 2 == 0)
     {
-        Console.Write(i + ",");
-        not = false;
+        Console.Write($" {count} ");
     }
-    i++;
-}
-if (not)
-{
-    Console.WriteLine("Нет четных чисел!");
-}
-
-{
-    break;
-    default;
-    begin = false;
-    break;
+    count++;
 }
 
 
@@ -38,10 +27,39 @@ if (not)
 
 
 
-// Console.Write($"{N} ---> ");
-// int i = 2;
-// while (i <= N)
+
+
+
+
+
+
+
+
+
+
+
+// int i = 1;
+// bool not = true;
+// Console.WriteLine("Введите натуральное число: ");
+// number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Четные числа от 1 до " + number);
+// while (i <= number)
 // {
-//     Console.Write(" " + i); i = i + 2;
-//     if (i <= N) Console.Write(",");
+//     if (i % 2 != 1)
+//     {
+//         Console.Write(i + ",");
+//         not = false;
+//     }
+//     i++;
+// }
+// if (not)
+// {
+//     Console.WriteLine("Нет четных чисел!");
+// }
+
+// {
+//     break;
+//     default;
+//     begin = false;
+//     break;
 // }
