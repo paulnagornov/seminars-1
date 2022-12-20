@@ -35,10 +35,10 @@ Console.WriteLine($"Случайное число из диапазона 10-99 
 int maxDigit = MaxDigit(number);
 Console.Write($"Наибольшая цифра числа = {maxDigit}");
 
-int MaxDigit(int number);
+int MaxDigit(int num)
 {
-    int firstDigit = number / 10;
-    int secondDigit = number % 10;
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
     int result = firstDigit > secondDigit ? firstDigit : secondDigit;
     return result;
 }
