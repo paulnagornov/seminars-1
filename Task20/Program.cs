@@ -19,7 +19,7 @@ double y2 = Convert.ToDouble(Console.ReadLine());
 double dist = Math.Round(Distance(x1, y1, x2, y2), 2, MidpointRounding.ToZero);
 Console.WriteLine($"расстояние между точками -> {dist}");
 
-double Distanse(double x1, double y1, double x2, double y2)
+double Distance(double x1, double y1, double x2, double y2)
 {
     return (Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)));
 }
