@@ -18,5 +18,6 @@ string Range(int num)
     if (num == 3)
         return "x < 0, y < 0";
     if (num == 4)
-        return "x > 0, y > 0";   
+        return "x > 0, y < 0";
+    return "Нет такой четверти";       
 }
