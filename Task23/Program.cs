@@ -15,7 +15,7 @@ Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 while (num < 1)
 {
-    Console.WriteLine("Введите натурально число: ");
+    Console.WriteLine("Введите натуральное число: ");
     num = Convert.ToInt32(Console.ReadLine());
 }
 NumCube(num);
