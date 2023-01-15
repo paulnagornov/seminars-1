@@ -4,7 +4,6 @@
 // [1,0,1,1,0,1,0,0]
 
 
-// int[] array = new int[8]; // 0, 1, 2, 3, 4, 5, 6, 7
 
 int[] CreateArray(int size)
 {
@@ -26,3 +25,19 @@ void PrintArray(int[] arr)
 }
 int[] arr = CreateArray(8);
 PrintArray(arr);
+
+
+
+
+
+// Console.WriteLine("Введите имя пользователя: ");
+// string username = Console.ReadLine();
+// if (username.ToLower() == "kirill")
+// {
+//     Console.WriteLine("Hi Mr. kirill");
+// }
+// else
+// {
+//     Console.Write("Hi, ");
+//     Console.WriteLine(username);
+// }
