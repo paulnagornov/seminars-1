@@ -15,10 +15,12 @@ int[] NewArray(int size)
 }
 void PrintArray(int[] arr)
 {
+    Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write($"{arr[i]} ");
+        Console.Write($" {arr[i]} ");
     }
+    Console.WriteLine("]");
 }
 int[] arr = NewArray(8);
 PrintArray(arr);
