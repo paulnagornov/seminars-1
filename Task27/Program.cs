@@ -15,13 +15,13 @@ int AddDigits(int a)
 
 {
     int s = 0;
-    for(int i = 0; i <=a ; i++)
+    for(int i = 0;  ; i++)
     {
-        a >= 1;
+        
         s = s + a % 10;
         a = a / 10;
     }
-    return s;
+    
 }
 Console.WriteLine($"Сумма цифр числа {number} -> {addOfDig}");
 
