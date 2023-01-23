@@ -22,6 +22,7 @@ int CountDigit(int insertNum)
         insertNum = insertNum / 10;
         temp++;
     }
+    return temp;
 }
 int userNumber = InsertDigit("Введите число: ");
 int count = CountDigit(userNumber);
