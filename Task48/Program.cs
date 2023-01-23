@@ -31,8 +31,10 @@ void PrintMatrix(int[,] matrix)
         Console.Write("[");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (j < matrix.GetLength(1) - 1) Console.Write(matrix[i, j] + ",");
-            else Console.Write(matrix[i, j]);
+            if (j < matrix.GetLength(1) - 1)
+                Console.Write(matrix[i, j] + ",");
+            else
+                Console.Write(matrix[i, j]);
         }
         Console.WriteLine("]");
     }
@@ -40,4 +42,3 @@ void PrintMatrix(int[,] matrix)
 
 int[,] arr1 = CreatMatrixNM(3, 4, 1, 50);
 PrintMatrix(arr1);
-
