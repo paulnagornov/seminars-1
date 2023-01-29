@@ -1,4 +1,4 @@
-﻿// Задача 47. Задайте двумерный массив размером m×n, 
+﻿// Задача 47. Задайте двумерный массив размером m×n,
 // заполненный случайными вещественными числами.
 // m = 3, n = 4.
 
@@ -43,8 +43,8 @@ string ArrayDoubleToString(double[,] array)
 
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            result = result + $" {array[i, j],4}";
-            result = j < (array.GetLength(1) - 1) ? result + " " : result;   
+            result = result + $" {array[i, j], 4}";
+            result = j < (array.GetLength(1) - 1) ? result + " " : result;
         }
 
         result += "]\n";
@@ -52,14 +52,12 @@ string ArrayDoubleToString(double[,] array)
     return result;
 }
 
-
 int matrixRow = 3,
     matrixColumns = 4,
     matrixMin = -50,
     matrixMax = 50;
 
 double[,] rndMatrix = CreateMatrixRndDouble(matrixRow, matrixColumns, matrixMin, matrixMax);
-
 string matrixString = ArrayDoubleToString(rndMatrix);
 Console.Clear();
 Console.WriteLine(matrixString);
